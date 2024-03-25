@@ -194,6 +194,7 @@ At this time this project is set to complete a capstone project for school. In t
 
 * Vite: This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 * Swipper effect: https://swiperjs.com/
+*Flow Bite React: https://www.flowbite-react.com/
 
 Currently, two official plugins are available:
 
