@@ -193,6 +193,7 @@ At this time this project is set to complete a capstone project for school. In t
 * React Icons : https://react-icons-v2.vercel.app/
 
 * Vite: This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* Swipper effect: https://swiperjs.com/
 
 Currently, two official plugins are available:
 
