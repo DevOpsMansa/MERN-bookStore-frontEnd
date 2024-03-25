@@ -1,7 +1,7 @@
 import React from 'react'
 import { Banner } from './Banner'
 import BookCards from '../shared/BookCards'
-import FavoriteBook from './FavoriteBook'
+import BestSellerBooks from './FavoriteBooks'
 import BestSeller from './BestSeller'
 import OtherBooks from './OtherBooks'
 import PromoBanner from './PromoBanner'
@@ -12,7 +12,7 @@ export const Home = () => {
     <div>
       <Banner/>
       <BestSeller/>
-      <FavoriteBook/>
+      <BestSellerBooks/>
       <PromoBanner/>
       <OtherBooks/>
       <Review/>
