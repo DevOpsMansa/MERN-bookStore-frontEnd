@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BookCards from "../pages/shared/BookCards";
 
 const BestSellerBooks = () => {
   const [books, setBooks] = useState([]);
