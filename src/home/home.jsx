@@ -6,6 +6,7 @@ import PromoBanner from "./PromoBanner";
 import OtherBooks from "./OtherBooks";
 import Review from "../home/Review";
 import ReviewCard from '../components/ReviewCard';
+import Shop from '../shop/Shop'
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <OtherBooks/>
       <Review/>
       <ReviewCard/>
+      <Shop/>
     </div>
   );
 };
