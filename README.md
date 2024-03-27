@@ -201,5 +201,13 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+
+### Issues encountered
+* Line 33, router.jsx. The error encountered, "GET http://localhost:5000/book/$%7Bbook._id%7D", indicates that the application was attempting to make a request to a URL with an incorrect format.
+Instead of substituting the value of book._id into the URL, it's being treated as a string literal, resulting in an invalid URL.
+
+This issue arises because the URL string is not being interpolated correctly. In JavaScript, string interpolation is typically done using template literals, denoted by backticks (), allowing you to embed expressions inside ${}`.
+By using backticks () around the URL string and ${}to interpolateparams.id, you ensure that the value of params.id` is correctly substituted into the URL.
+
 ## Author
 Eric (Mansa) Marah

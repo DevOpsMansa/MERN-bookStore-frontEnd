@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 
-const FavBook = () => {
-  return (
-    <div>FavBook</div>
-  )
-}
+// const FavBook = () => {
+//   return (
+//     <div>FavBook</div>
+//   )
+// }
 
-export default FavBook
+// export default FavBook

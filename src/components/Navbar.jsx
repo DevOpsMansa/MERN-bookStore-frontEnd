@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-//React icons
-import { FaBarsStaggered, FaBlog } from "react-icons/fa6";
+import { FaBarsStaggered, FaBlog, FaXmark } from "react-icons/fa6"; // Import FaXmark from react-icons/fa6
 
 const Navbar = () => {
   // State for menu visibility and sticky navbar
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State variable to track menu visibility
+  const [isSticky, setIsSticky] = useState(false); // State variable to track sticky navbar
 
   // Function to toggle menu visibility
   const toggleMenu = () => {
@@ -17,21 +15,25 @@ const Navbar = () => {
   // Effect to handle navbar stickiness on scroll
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrolly > 100) {
+      // Check if window is scrolled beyond a certain point to determine if navbar should become sticky
+      if (window.scrollY > 100) {
+        // Fixed typo: Changed 'window.scrolly' to 'window.scrollY'
         setIsSticky(true);
       } else {
         setIsSticky(false);
       }
     };
 
+    // Add event listener for scroll
     window.addEventListener("scroll", handleScroll);
 
+    // Cleanup function to remove event listener
     return () => {
-      window.addEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll); // Fixed typo: Changed 'addEventListener' to 'removeEventListener'
     };
   }, []);
 
-  //Navbar items and styling added
+  // Navbar items and their corresponding paths
   const navItems = [
     { link: "Home", path: "/" },
     { link: "About", path: "/about" },
@@ -51,9 +53,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="text-2xl font-bold text-cyan-500 flex items-center "
+            className="text-2xl font-bold text-orange-500 flex items-center gap-2"
           >
-            <FaBlog className="inline-block bg-#39dbd8 c-#e93516" />
+            <FaBlog className="inline-block" />
             Books
           </Link>
 
@@ -63,7 +65,7 @@ const Navbar = () => {
               <Link
                 key={path}
                 to={path}
-                className="block text-base text-black uppercase cursor-pointer hover:text-blue-700"
+                className="block text-base text-black uppercase cursor-pointer hover:text-orange-500"
               >
                 {link}
               </Link>
@@ -73,7 +75,7 @@ const Navbar = () => {
           {/* Button for large devices */}
           <div className="space-x-12 hidden lg:flex items-center">
             <button>
-              <FaBarsStaggered className="w-5 hover:text-blue-700" />
+              <FaBarsStaggered className="w-5 hover:text-orange-500" />
             </button>
           </div>
 
@@ -102,7 +104,7 @@ const Navbar = () => {
             <Link
               key={path}
               to={path}
-              className="block text-base text-black uppercase cursor-pointer hover:text-blue-700"
+              className="block text-base text-orange-500 uppercase cursor-pointer hover:text-cyan-500"
             >
               {link}
             </Link>
