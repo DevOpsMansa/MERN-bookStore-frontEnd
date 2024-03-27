@@ -209,5 +209,10 @@ Instead of substituting the value of book._id into the URL, it's being treated a
 This issue arises because the URL string is not being interpolated correctly. In JavaScript, string interpolation is typically done using template literals, denoted by backticks (), allowing you to embed expressions inside ${}`.
 By using backticks () around the URL string and ${}to interpolateparams.id, you ensure that the value of params.id` is correctly substituted into the URL.
 
+### Bugs to fix
+  * ReviewCard.jsx and Review.jsx the swiper is not responding and the extra review card be removed
+  * hen a book in Books is clicked - server crashes and fail to fetch (Unexpected Application Error! Failed to fetch)
+  * 
+
 ## Author
 Eric (Mansa) Marah
