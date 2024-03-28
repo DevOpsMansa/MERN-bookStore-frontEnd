@@ -1,22 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import BookCards from '../components/BookCards';
-
-
+import React, { useEffect, useState } from "react";
+import BookCards from "../components/BookCards";
 
 const OtherBooks = () => {
-        const [books, setBooks] = useState([]);
-      
-        useEffect(() => {
-          fetch("http://localhost:5000/all-books")
-            .then(res => res.json())
-            .then(data => setBooks(data.slice(2,9)))
-            // .catch(error => console.error("Error fetching data:", error)); 
-        }, [])
-        return (
-          <div>
-            <BookCards books={books} headLine="Other Books" />
-          </div>
-        );
-      };
+  const [books, setBooks] = useState([]);
 
-export default OtherBooks
+  useEffect(() => {
+    fetch("https://mern-bookstore-backend-0c5b.onrender.com/all-books")
+      .then((res) => res.json())
+      .then((data) => setBooks(data.slice(2, 9)));
+    // .catch(error => console.error("Error fetching data:", error));
+  }, []);
+  return (
+    <div>
+      <BookCards books={books} headLine="Other Books" />
+    </div>
+  );
+};
+
+export default OtherBooks;

@@ -6,7 +6,7 @@ const Shop = () => {
 
   // fetching data from server
   useEffect(() => {
-    fetch("http://localhost:5000/all-books")
+    fetch("https://mern-bookstore-backend-0c5b.onrender.com/all-books")
       .then((res) => res.json())
       .then((data) => setBooks(data));
   }, []);

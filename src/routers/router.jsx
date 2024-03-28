@@ -38,7 +38,9 @@ const router = createBrowserRouter([
         path: "/book/:id",
         element: <SingleBook />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/book/${params.id}`), // Fixed interpolation issue here
+          fetch(
+            `https://mern-bookstore-backend-0c5b.onrender.com/book/${params.id}`
+          ), // Fixed interpolation issue here
       },
     ],
   },
@@ -62,22 +64,24 @@ const router = createBrowserRouter([
         path: "/admin/dashboard/edit-books/:id",
         element: <EditBooks />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/book/${params.id}`),
+          fetch(
+            `https://mern-bookstore-backend-0c5b.onrender.com/book/${params.id}`
+          ),
       },
     ],
   },
   {
     path: "sign-up",
-    element: <Signup />
+    element: <Signup />,
   },
   {
     path: "sign-up",
-    element: <Signup/>
+    element: <Signup />,
   },
   {
-    path:"log-out",
-    element: <Logout/>
-  }
+    path: "log-out",
+    element: <Logout />,
+  },
 ]);
 
 export default router;

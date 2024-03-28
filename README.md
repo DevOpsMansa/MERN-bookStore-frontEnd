@@ -1,5 +1,7 @@
 # MERN-bookStore-frontEnd
+
                                       Per Scholas 2024 capStone Project
+
 ## ** Project Description **
 
 A Book Store App Website built on MERN Developer Stack (React JS, MongoDB, Express, and Node JS) with Inventory Management, is a sophisticated and dynamic web application designed to facilitate the operations of a modern book store.
@@ -58,7 +60,8 @@ Store managers can access a dedicated admin dashboard where they can view real-t
 
 ### Frontend Development:
 
-  #### Folder Structure
+#### Folder Structure
+
     * Set up React.js environment using Create React App.
     *  Develop UI components based on wireframes and designs.
     * mplement routing using React Router.
@@ -72,11 +75,11 @@ Store managers can access a dedicated admin dashboard where they can view real-t
 
 ### Inventory Management:
 
-  * Develop admin panel UI for inventory management.
-  * Implement functionalities for adding, editing, and deleting books.
-  * Incorporate search and filter options for easy inventory management.
-  * Implement notifications for low stock or out-of-stock items.
-  * Secure admin functionalities with appropriate authorization.
+- Develop admin panel UI for inventory management.
+- Implement functionalities for adding, editing, and deleting books.
+- Incorporate search and filter options for easy inventory management.
+- Implement notifications for low stock or out-of-stock items.
+- Secure admin functionalities with appropriate authorization.
 
 ### Testing:
 
@@ -166,16 +169,16 @@ At this time this project is set to complete a capstone project for school. In t
   Hello world!
   </h1>
   )
-  
+
 }
 
-* React Router Dom: https://reactrouter.com/en/main/start/tutorial
-* React Icons : https://react-icons-v2.vercel.app/
+- React Router Dom: https://reactrouter.com/en/main/start/tutorial
+- React Icons : https://react-icons-v2.vercel.app/
 
-* Vite: This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-* Swipper effect: https://swiperjs.com/
-* Flow Bite React: https://www.flowbite-react.com/
-* Authentication- You add a project - comes with analytics for a project: https://firebase.google.com/
+- Vite: This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Swipper effect: https://swiperjs.com/
+- Flow Bite React: https://www.flowbite-react.com/
+- Authentication- You add a project - comes with analytics for a project: https://firebase.google.com/
 
 Currently, two official plugins are available:
 
@@ -183,39 +186,41 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Link to BackEnd Server
-* https://github.com/DevOpsMansa/MERN-bookStore-backEnd
+
+- https://github.com/DevOpsMansa/MERN-bookStore-backEnd
 
 ### Issues encountered
-* Line 33, router.jsx. The error encountered, "GET http://localhost:5000/book/$%7Bbook._id%7D", ==> 
+
+- Line 33, router.jsx. The error encountered, "GET https://mern-bookstore-backend-0c5b.onrender.com/book/$%7Bbook._id%7D", ==>
   indicates that the application was attempting to make a request to a URL with an incorrect format.
-  Instead of substituting the value of book._id into the URL, it's being treated as a string literal, resulting in an invalid URL.
+  Instead of substituting the value of book.\_id into the URL, it's being treated as a string literal, resulting in an invalid URL.
 
   This issue arises because the URL string is not being interpolated correctly. In JavaScript, string interpolation is typically done using template literals, denoted by backticks (), allowing you to embed expressions inside ${}`.
-  By using backticks () around the URL string and ${}to interpolateparams.id, you ensure that the value of params.id` is correctly substituted into the URL.
+By using backticks () around the URL string and ${}to interpolateparams.id, you ensure that the value of params.id` is correctly substituted into the URL.
 
-* Uncaught ReferenceError: process is not defined ==> 
+- Uncaught ReferenceError: process is not defined ==>
   To fix the code and avoid the Uncaught ReferenceError: process is not defined error, you need to handle the environment variables differently in client-side JavaScript. Since process.env is not available in the browser environment, you can't directly access environment variables.
-      if you are using CRA (create react app), use process.env.
-      if you are using ViteJS, use import.meta.env.
+  if you are using CRA (create react app), use process.env.
+  if you are using ViteJS, use import.meta.env.
 
 ### Bugs to fix
-  * ReviewCard.jsx and Review.jsx the swiper is not responding and the extra review card be removed
-  * hen a book in Books is clicked - server crashes and fail to fetch (Unexpected Application Error! Failed to fetch)
-  * Cannot destructure property 'signUpWithGmail' of 'useContext(...)' as it is undefined. This is coming from "Signup.jsx line 12"
 
-  ### Yet to come...
+- ReviewCard.jsx and Review.jsx the swiper is not responding and the extra review card be removed
+- hen a book in Books is clicked - server crashes and fail to fetch (Unexpected Application Error! Failed to fetch)
+- Cannot destructure property 'signUpWithGmail' of 'useContext(...)' as it is undefined. This is coming from "Signup.jsx line 12"
+
+### Yet to come...
+
       #### Admin
           * Admin User Authentication to complete
           * Add user Authorisation
-      #### User Side 
+      #### User Side
           * Authentication
-          * Payment Method 
+          * Payment Method
           * A working Cart
       #### Development
           * Host website
 
-
-
-
 ## Author
+
 Eric (Mansa) Marah
