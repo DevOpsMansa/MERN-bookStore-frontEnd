@@ -1,17 +1,17 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "../App";
-import Home from "../home/Home";
-import Shop from "../shop/Shop";
-import About from "../components/About";
-import Blog from "../components/Blog";
-import SingleBook from "../components/SingleBook";
-import DashboardLayout from "../dashboard/DashboardLayout";
-import Dashboard from "../dashboard/Dashboard";
-import UploadBook from "../dashboard/UploadBook";
-import ManageBooks from "../dashboard/ManageBooks";
-import EditBooks from "../dashboard/EditBooks";
-import Signup from "../components/Signup";
-import Logout from "../components/Logout";
+import App from "../App.jsx";
+import Home from "../home/Home.jsx";
+import Shop from "../shop/Shop.jsx";
+import About from "../components/About.jsx";
+import Blog from "../components/Blog.jsx";
+import SingleBook from "../components/SingleBook.jsx";
+import DashboardLayout from "../dashboard/DashboardLayout.jsx";
+import Dashboard from "../dashboard/Dashboard.jsx";
+import UploadBook from "../dashboard/UploadBook.jsx";
+import ManageBooks from "../dashboard/ManageBooks.jsx";
+import EditBooks from "../dashboard/EditBooks.jsx";
+import Signup from "../components/Signup.jsx";
+import Logout from "../components/Logout.jsx";
 
 const router = createBrowserRouter([
   {
