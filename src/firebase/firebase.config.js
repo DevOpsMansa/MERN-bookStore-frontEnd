@@ -1,17 +1,18 @@
 // Import the functions you need from the SDKs you need
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCIQl0weHWkyX7FNmGNCTElUYL9aL0HPMA",
-    authDomain: "online-book-store-78516.firebaseapp.com",
-    projectId: "online-book-store-78516",
-    storageBucket: "online-book-store-78516.appspot.com",
-    messagingSenderId: "282181520275",
-    appId: "1:282181520275:web:0ce28538cea0433ea83666"
-  };
+  apiKey: `${import.meta.env.MERN_BOOKSTORE_API_KEY}`,
+  authDomain: `${import.meta.env.MERN_BOOKSTORE_AUTH_DOMAIN}`,
+  projectId: "mern-bookstore-e6403",
+  storageBucket: "mern-bookstore-e6403.appspot.com",
+  messagingSenderId: "78111749188",
+  appId: "1:78111749188:web:826dd690ce71606a64b811"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

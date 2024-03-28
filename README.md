@@ -194,7 +194,8 @@ At this time this project is set to complete a capstone project for school. In t
 
 * Vite: This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 * Swipper effect: https://swiperjs.com/
-*Flow Bite React: https://www.flowbite-react.com/
+* Flow Bite React: https://www.flowbite-react.com/
+* Authentication- You add a project - comes with analytics for a project: https://firebase.google.com/
 
 Currently, two official plugins are available:
 
@@ -205,11 +206,18 @@ Currently, two official plugins are available:
 * https://github.com/DevOpsMansa/MERN-bookStore-backEnd
 
 ### Issues encountered
-* Line 33, router.jsx. The error encountered, "GET http://localhost:5000/book/$%7Bbook._id%7D", indicates that the application was attempting to make a request to a URL with an incorrect format.
-Instead of substituting the value of book._id into the URL, it's being treated as a string literal, resulting in an invalid URL.
+* Line 33, router.jsx. The error encountered, "GET http://localhost:5000/book/$%7Bbook._id%7D", ==> 
+  indicates that the application was attempting to make a request to a URL with an incorrect format.
+  Instead of substituting the value of book._id into the URL, it's being treated as a string literal, resulting in an invalid URL.
 
-This issue arises because the URL string is not being interpolated correctly. In JavaScript, string interpolation is typically done using template literals, denoted by backticks (), allowing you to embed expressions inside ${}`.
-By using backticks () around the URL string and ${}to interpolateparams.id, you ensure that the value of params.id` is correctly substituted into the URL.
+  This issue arises because the URL string is not being interpolated correctly. In JavaScript, string interpolation is typically done using template literals, denoted by backticks (), allowing you to embed expressions inside ${}`.
+  By using backticks () around the URL string and ${}to interpolateparams.id, you ensure that the value of params.id` is correctly substituted into the URL.
+
+
+* Uncaught ReferenceError: process is not defined ==> 
+  To fix the code and avoid the Uncaught ReferenceError: process is not defined error, you need to handle the environment variables differently in client-side JavaScript. Since process.env is not available in the browser environment, you can't directly access environment variables.
+      if you are using CRA (create react app), use process.env.
+      if you are using ViteJS, use import.meta.env.
 
 ### Bugs to fix
   * ReviewCard.jsx and Review.jsx the swiper is not responding and the extra review card be removed
