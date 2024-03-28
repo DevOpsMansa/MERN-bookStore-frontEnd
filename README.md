@@ -1,6 +1,6 @@
 # MERN-bookStore-frontEnd
 
-                           ### Per Scholas 2024 capStone Project
+                                      Per Scholas 2024 capStone Project
 
 ## ** Project Description **
 
