@@ -1,7 +1,5 @@
 # MERN-bookStore-frontEnd
-
                                       Per Scholas 2024 capStone Project
-
 ## ** Project Description **
 
 A Book Store App Website built on MERN Developer Stack (React JS, MongoDB, Express, and Node JS) with Inventory Management, is a sophisticated and dynamic web application designed to facilitate the operations of a modern book store.
@@ -58,45 +56,27 @@ Store managers can access a dedicated admin dashboard where they can view real-t
 - Create wireframes and user interface designs.
 - Set up project management tools and communication channels.
 
-### Backend Development:
-
-- Folder Structure
-  bookStore - capStone
-  Mern-Server (Back-end)
-  index.js File - Main entry point
-  .env file - Keep top secrets
-  .gitignore - ignore top secret file in github and more
-  README.md - Project details
-
-* Set up the Node.js environment.
-* Initialize Express.js framework for building RESTful APIs.
-* Design MongoDB database schema for books and inventory management.
-* Implement CRUD (Create, Read, Update, Delete) operations for books and inventory.
-* Implement user authentication and authorization using JWT (JSON Web Tokens).
-* Test API endpoints using Postman or similar tools.
-* Include at least one form of user authentication/authorization within the application.
-
 ### Frontend Development:
 
-Folder Structure
-Set up React.js environment using Create React App.
-Develop UI components based on wireframes and designs.
-Implement routing using React Router.
-Integrate APIs to fetch and display book data.
-Implement user authentication and authorization flows.
-Develop forms for user interaction such as login, registration, and checkout.
-Use CSS to style the application.
-Create at least four different views or pages for the application.
-Create some form of navigation that is included across the application’s pages, utilizing React Router for page rendering.
-Ensure responsiveness and cross-browser compatibility.
+  #### Folder Structure
+    * Set up React.js environment using Create React App.
+    *  Develop UI components based on wireframes and designs.
+    * mplement routing using React Router.
+    * Integrate APIs to fetch and display book data.
+    * Implement user authentication and authorization flows.
+    * Develop forms for user interaction such as login, registration, and checkout.
+    * Use TailwindCSS to style the application.
+    * Create at least four different views or pages for the application.
+    * Create some form of navigation that is included across the application’s pages, utilizing React Router for page rendering.
+    * Ensure responsiveness and cross-browser compatibility.
 
 ### Inventory Management:
 
-Develop admin panel UI for inventory management.
-Implement functionalities for adding, editing, and deleting books.
-Incorporate search and filter options for easy inventory management.
-Implement notifications for low stock or out-of-stock items.
-Secure admin functionalities with appropriate authorization.
+  * Develop admin panel UI for inventory management.
+  * Implement functionalities for adding, editing, and deleting books.
+  * Incorporate search and filter options for easy inventory management.
+  * Implement notifications for low stock or out-of-stock items.
+  * Secure admin functionalities with appropriate authorization.
 
 ### Testing:
 
@@ -213,7 +193,6 @@ Currently, two official plugins are available:
   This issue arises because the URL string is not being interpolated correctly. In JavaScript, string interpolation is typically done using template literals, denoted by backticks (), allowing you to embed expressions inside ${}`.
   By using backticks () around the URL string and ${}to interpolateparams.id, you ensure that the value of params.id` is correctly substituted into the URL.
 
-
 * Uncaught ReferenceError: process is not defined ==> 
   To fix the code and avoid the Uncaught ReferenceError: process is not defined error, you need to handle the environment variables differently in client-side JavaScript. Since process.env is not available in the browser environment, you can't directly access environment variables.
       if you are using CRA (create react app), use process.env.
@@ -222,7 +201,21 @@ Currently, two official plugins are available:
 ### Bugs to fix
   * ReviewCard.jsx and Review.jsx the swiper is not responding and the extra review card be removed
   * hen a book in Books is clicked - server crashes and fail to fetch (Unexpected Application Error! Failed to fetch)
-  * 
+  * Cannot destructure property 'signUpWithGmail' of 'useContext(...)' as it is undefined. This is coming from "Signup.jsx line 12"
+
+  ### Yet to come...
+      #### Admin
+          * Admin User Authentication to complete
+          * Add user Authorisation
+      #### User Side 
+          * Authentication
+          * Payment Method 
+          * A working Cart
+      #### Development
+          * Host website
+
+
+
 
 ## Author
 Eric (Mansa) Marah
