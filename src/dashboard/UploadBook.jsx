@@ -69,7 +69,7 @@ const UploadBook = () => {
       .then((data) => {
         // console.log(data);
         alert("Book updated successfully!!!!");
-        form.reset();
+        form.reset();  //resets the input area after successful upload
       });
   };
 
